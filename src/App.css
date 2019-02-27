@@ -1,159 +1,19 @@
-body {
-  box-sizing: border-box;
-  display: block;
-  padding: 0px;
-  margin: 0px;
-  font-family: 'Open Sans', sans-serif;
-}
-
-* {
-  border: 1px solid red;
-  margin: 0px;
-}
-
-.section-one {
-  position: relative;
-  height: 600px;
-  overflow: hidden;
-}
-
-.backdrop {
-  width: 100%;
-  height: auto;
-  overflow: hidden;
-}
-
-.nav-bar {
-  position: fixed;
-  left: 0;
-  right: 0;
-  width: 100%;
-  display: inline-flex;
-  justify-content: flex-end;
-  flex-wrap: nowrap;
-  background-color: rgba(255, 255, 255, .85);
-  font-weight: bold;
-}
-
-.hamburger {
-  float: left;
-  margin-left: 15px;
-}
-
-.title-box {
-  margin-left: 40px;
-  float: left;
-}
-
-.button-capsule {
-  flex-direction: row;
-  flex-wrap: nowrap;
-  text-decoration: none;
-  display: inline-block;
-  padding: 12px;
-  overflow: auto;
-}
-
-.button-capsule > li {
-  display: inline;
-  content:'';
-  margin-right: 20px;
-  padding: 1px;
-}
-
-.button-capsule > li > a, a:visited{
-  text-decoration: none;
-  color: black;
-}
-
-.button-capsule > li > a:hover {
-  cursor: pointer;
-  display: inline-block;
-  color: #cc8d4c;
-}
-
-#nametag {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 22px 0px 12px 0px;
-  width: 350px;
-  height: 500px;
-  border-radius: 5px;
-  background-color: (255, 255, 255, .90);
-  text-align: center;
-}
-
-#nametag > p {
-  display: inline-block;
-  padding: 4px;
-}
-
-#nametag > a {
-  padding: 20px;
-  cursor: pointer;
-  display: inline-block;
-  color: #cc8d4c;
-}
-
-#nametag > a:hover {
-  color: #000000;
-}
-
-.author {
-  font-size: 2em;
-}
-
-#about {
-  width: 100%;
-  color: #fcfaf8;
-  background-color: #5b4630;
-}
-
-.card > h2 {
-  font-size: 2em;
-  padding: 40px;
-}
-
-.card > p {
-  font-size: 1em;
-  padding: 40px;
-}
-
-#portfolio {
-  width: 100%;
-  background-color: #dac1a2;
-}
-
-#contact {
-  background-color: #6c6053;
-  width: 100%;
-  color: #fcfaf8;
-}
-
 
         body {
               /* Typography Declarations */
-              color: #363b3f;
+              color: #e9edf1;
               font-size: 1em;
               font-family: "Open Sans", "Helvetica Neue", sans-serif;
+              background-image: url("https://lh3.googleusercontent.com/yCVt9Z4hT0KWwc1cj6v4VlF1HV7adqaM0Un19Y5UygPgIE3mtEhj61pM7c9Eb5tiAboVvh2L7pf0R-mKUeVP2_6b_E-yWWN_T0DzEqONdrYf6ptLFJLZ4yH6Q3JrWYGKmGtfZ9hXYdzKW_CcOsdRFZdRNx3UTsmLcSPDRRVy-_2SSid6-3XY-k-JlIe40NF3zE7gmliu-A6XF151aJh1aC0AleGwC3bXqbMXEe6-JQlifXsAYiXAiuDk2OBhHB-ZrxZID1T5EejxWtqkMzupLvGJznDPbc1P3D3OwJ8rKM1VLD6yZIcCCwqYCamniSogqSdnXpZhB3bMMbbiEFa3lqn8bfEbyRnNnSVH9xpmts8Jna2Jy9oZHNj0Eg9rWGqX2Rf_WvvLC8v1yM4WP5aeCw1lLXKTDdf4DoY4b3fklDgDr15urNRWU-59duLAY48BYhFC32-uDpxa89sUvnZKuWkMd2oidrgNrszt6No9M30GVzVkkJxpKapa3jyxwj7wceWxHT1FJLdjMOUludouiQrUpyXXnItPpx7Mobd5uJKDZb0r_Es7EcLs-E4WlSMVBXAoapeGq3ElEm5lkBjhmxUyfkzYXhaq-i6gTONK0HG1LHyWXpyqZp1593hKIx_bTktMdYWocOUkndv8qE4OPBx8T8Ol1MM=w917-h741-no");
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-position: fixed;
+              margin: auto;
+              height: 100%; 
+              width: 100%; 
           }
-          
-          .content-footer,
-          .masthead-heading,
-          .masthead-intro {
-            text-align: center;
-          }
-          
-          .masthead {
-            padding: 6em 0;
-            background-image: url('https://i.imgur.com/yGmrlyg.jpg');
-            background-size: cover;
-            background-repeat: no-repeat;
-            border-top: solid 1em #95212c;
-          }
-          
+
+            
           .masthead-intro {
               /* Layout Declarations */
               margin-bottom: 0.1em;
@@ -162,25 +22,14 @@ body {
               font-size: 2em;
           }
           
-          .masthead-heading {
-              /* Layout Declarations */
-              color: #363b3f;
-              margin-top: -0.2em;
-              /* Typography Declarations */
-              font-family: "Open Sans", "Helvetica Neue", sans-serif;
-              font-weight: bold;
-              font-size: 6em;
-              letter-spacing: -0.02em;
-              text-transform: uppercase;
-          }
           
           .introduction-section,
           .location-section,
           .questions-section {
-              max-width: 38em;
+              max-width: 50em;
               margin-left: auto;
               margin-right: auto;
-              margin-top: 2em;
+              margin-top: 0.2em;
           }
           
           .introduction-section > p,
@@ -188,7 +37,7 @@ body {
           .questions-section,
           .content-footer > p {
               /* Typography Declarations */
-              font-weight: 300;
+              font-weight: 500px;
               letter-spacing: 0.05em;
           }
           
@@ -201,8 +50,10 @@ body {
           }
           
           section > h1 {
-              margin-top: 2em;
+              margin-top: 0em;
+              text-align: center;
           }
+
           
           .content-footer,
           .masthead-heading,
@@ -211,11 +62,10 @@ body {
           }
           
           .masthead {
-            padding: 6em 0;
-            background-image: url('https://i.imgur.com/yGmrlyg.jpg');
+            padding: 9em 0;
+            /* background-image: url('http://www.opencontrail.org/wp-content/uploads/2017/06/mesh-1430107.png'); */
             background-size: cover;
             background-repeat: no-repeat;
-            border-top: solid 1em #73A8C2;
           }
           
           .masthead-intro {
@@ -226,10 +76,11 @@ body {
           
           .masthead-heading {
             margin-top: -0.2em;
+            margin-bottom: -0.5em;
             font-family: "Open Sans", "Helvetica Neue", sans-serif;
             font-weight: bold;
             font-size: 6em;
-            letter-spacing: -0.02em;
+            letter-spacing: -0.05em;
             text-transform: uppercase;
           }
           .introduction > p,
@@ -249,39 +100,40 @@ body {
           .introduction-section,
           .location-section,
           .questions-section {
-              max-width: 38em;
+              max-width: 60em;
               margin-left: auto;
               margin-right: auto;
-              margin-top: 2em;
+              margin-top: 0em;
           }
-          .content-footer {
-            margin: 50px 0;
-            padding: 20px 0;
-            text-align: center;
-            background-color: #73A8C2;
-            text-decoration: none;
-          }
-          .social > li {
+          
+
+          .social > li, i {
             display: inline-block;
-            margin: 0 5px;
+            justify-content: center;
+            font-size: 25px;
+            margin: 5px;
+            padding-top: 5px;
+            color:white;
           }
-          .content-footer > p {
-            color: #F7EDE1;
-          }
+
           a {
               font-weight: bold;
               text-decoration: none;
-              color: #f2b91f;
+              color: #3a3f42;
           }
-            
-          @media only screen and (max-width: 500px) {
-              .masthead {
-                  padding: 3em 0;
-              }
-              .masthead-heading {
-                  font-size: 3em;
-              }
-              .content-footer {
-                  padding: 2em 2.5em;
-            }
-        }
+
+          img{
+             block-size: 400px;
+          }
+
+            footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;    
+            margin-top: 0px;
+            padding: 0px;
+            text-align: center;
+            background-color: rgb(7, 39, 80);
+          }
+         
